@@ -1,0 +1,445 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: #f1f5f9;
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #22d3ee;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+body
+{
+    width: 1280px;
+    display: block;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "Nunito", sans-serif;
+    color: #1e3a8a;
+    z-index: 5;
+}
+
+.primary
+{
+    background-color: #22d3ee;
+    color: #f1f5f9;
+}
+
+.secondary
+{
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+#primary-btn
+{
+    background-color: #22d3ee;
+    color: #f1f5f9;
+    padding: 1.5vh 2vw;
+    border-bottom: none;
+    border-radius: 0.5vh;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    -webkit-border-radius: 0.5vh;
+    -moz-border-radius: 0.5vh;
+    -ms-border-radius: 0.5vh;
+    -o-border-radius: 0.5vh;
+}
+
+#primary-btn:hover
+{
+    background-color: #334155;
+    color: #f1f5f9;
+    padding: 1.5vh 2vw;
+    text-decoration: none;
+}
+
+#secondary-btn
+{
+    background-color: #334155;
+    color: #f1f5f9;
+    padding: 1.5vh 2vw;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+
+#secondary-btn:hover
+{
+    background-color: #22d3ee;
+    color: #f1f5f9;
+    padding: 1.5vh 2vw;
+    text-decoration: none;
+}
+
+.header
+{
+    z-index: 1000;
+    position: fixed;
+    width: 1280px;
+    overflow: auto;
+    transition: all 0.15s linear;
+    top: 0;
+    height: 8vh;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    font-family: "Nunito", sans-serif;
+    background-color: #f1f5f9;
+}
+
+.header .brand
+{
+    width: 150px;
+    align-items: center;
+}
+
+.header .brand a
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1e3a8a;
+    font-size: 1.5vh;
+    line-height: 1.5vh;
+}
+
+.header .brand a img
+{
+    height: 4vh;
+    padding: 2vh 1vh 2vh 2vh;
+}
+
+.header .menu
+{
+    display: flex;
+    justify-content: space-around;
+    width: 640px;
+    align-items: center;
+}
+
+.header .menu a
+{
+    text-decoration: none;
+    font-weight: 900;
+    color: #1e3a8a;
+    border-bottom: transparent 2px solid;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+
+.header .menu a:hover
+{
+    border-bottom: #22d3ee 2px solid;
+}
+
+section
+{
+    height: 84vh;
+    padding: 8vh 0;
+    width: 1256px;
+    padding: 0 12px;
+    background-color: #f1f5f9;
+}
+
+section.main
+{
+    height: 84vh;
+    padding: 8vh 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.main .content
+{
+    width: 45%;
+}
+
+section.main h1
+{
+    font-size: 5vh;
+    line-height: 5vh;
+    color: #334155;
+    padding-bottom: 2vh;
+}
+
+section.main span
+{
+    color: #22d3ee;
+}
+
+section.main h3
+{
+    font-size: 3vh;
+    line-height: 3vh;
+    color: #334155;
+    padding-bottom: 6vh;
+    font-weight: 500;
+}
+
+section.main .content a
+{
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+}
+
+.wrapper
+{
+    display: block;
+}
+
+.btt
+{
+    position: fixed;
+    background-color: #22d3ee;
+    height: 6vh;
+    width: 6vh;
+    right: 4vh;
+    bottom: 4vh;
+    color: #cffafe;
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+    font-weight: 800;
+    border-radius: 1vh;
+    -webkit-border-radius: 1vh;
+    -moz-border-radius: 1vh;
+    -ms-border-radius: 1vh;
+    -o-border-radius: 1vh;
+}
+
+.btt a
+{
+    background-color: transparent;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.btt i
+{
+    color: #cffafe;
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+}
+
+.section
+{
+    height: 84vh;
+    padding: 8vh 0;
+    background-color: #f1f5f9;
+}
+
+#services
+{
+    text-align: center;
+}
+
+#services .service
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4.8vh;
+}
+
+#services .card
+{
+    width: 380px;
+    height: 60vh;
+    box-shadow: 0px 0 10px rgb(1 41 112 / 8%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    overflow: hidden;
+}
+
+#services .card lottie-player
+{
+    align-items: center;
+    display: block;
+    margin: auto;
+    transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+}
+
+#services .card h1
+{
+    padding: 0 10px;
+}
+
+#services .card h3
+{
+    font-weight: 500;
+    padding: 10px;
+    color: #334155;
+}
+
+#services .card span
+{
+    color: #22d3ee;
+}
+
+#services .card:hover
+{
+    box-shadow: 0px 0 10px rgb(1 41 112 / 16%);
+}
+
+#services .card:hover lottie-player
+{
+    transform: scale(90%);
+    -webkit-transform: scale(90%);
+    -moz-transform: scale(90%);
+    -ms-transform: scale(90%);
+    -o-transform: scale(90%);
+}
+
+
+
+/* get in touch section */
+#git
+{
+    height: 40vh;
+    width: 100%;
+    background-color: #cffafe;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#git h2
+{
+    color: #1e3a8a;
+    background-color: transparent;
+}
+
+#git h3
+{
+    color: #334155;
+    font-weight: 500;
+    background-color: transparent;
+    padding-bottom: 2vh;
+}
+
+#git a
+{
+    text-decoration: none;
+    font-weight: 800;
+    font-family: "Nunito", sans-serif;
+}
+
+
+
+#plans
+{
+    text-align: center;
+}
+
+#plans .service
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4.8vh;
+}
+
+#plans .card
+{
+    width: 380px;
+    display: none;
+    height: 60vh;
+    box-shadow: 0px 0 10px rgb(1 41 112 / 8%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    overflow: hidden;
+}
+
+#plans .card lottie-player
+{
+    align-items: center;
+    display: block;
+    margin: auto;
+    transition: ease-in-out 0.5s;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+}
+
+#plans .card h1
+{
+    padding: 0 10px;
+}
+
+#plans .card h3
+{
+    font-weight: 500;
+    padding: 10px;
+    color: #334155;
+}
+
+#plans .card span
+{
+    color: #22d3ee;
+}
+
+#plans .card:hover
+{
+    box-shadow: 0px 0 10px rgb(1 41 112 / 16%);
+}
+
+#plans .card:hover lottie-player
+{
+    transform: scale(90%);
+    -webkit-transform: scale(90%);
+    -moz-transform: scale(90%);
+    -ms-transform: scale(90%);
+    -o-transform: scale(90%);
+}
