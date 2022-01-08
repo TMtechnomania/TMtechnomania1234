@@ -10,6 +10,7 @@
     <link rel='stylesheet' media='screen and (max-width: 640px)' href='S.css' />
     <link rel='stylesheet' media='screen and (min-width: 641px) and (max-width: 1279px)' href='M.css' />
     <link rel='stylesheet' media='screen and (min-width: 1280px)' href='L.css' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <!-- Theme colour for chrome on Android -->
     <meta name="theme-color" content="#0ea5e9" />
@@ -27,9 +28,9 @@
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#plans">Plans</a>
-            <a href="">About</a>
-            <a href="">FAQ</a>
-            <a href="" id="primary-btn">Contact</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact" id="primary-btn">Contact</a>
         </div>
     </div>
 
@@ -86,23 +87,215 @@
         <div id="plans" class="section">
             <h3>Plans</h3>
             <h1>Fits in your pocket without sacrificing your needs.</h1>
+            <!-- Tabs for plans -->
+                <div class="tab">
+                    <button href=""  id="defaultOpen" class="tablinks" onclick="openCity(event, 'monthly')">Monthly</button>
+                    <button href="" class="tablinks" onclick="openCity(event, 'quarterly')">Quarterly</button>
+                    <button href="" class="tablinks" onclick="openCity(event, 'annually')">Annually</button>
+                  </div>
             <div class="service">
-                <div class="card">
+
+                <div id="monthly" class="tabcontent">
+                    
+                    <div id="basic" class="card">
+                        <h4>Basic</h4>
+                        <h1><span>799 INR</span></h1>
+                        <h3>for 1st month then 299 INR month for monthly maintenance</h3>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Add your Business on Google Maps</li>
+
+                            <li><i class="far fa-check-circle"></i> Build a Static Google Business Website</li>
+
+                            <li><i class="far fa-check-circle"></i> Verify your Business on Google Maps</li>
+
+                            <li><i class="far fa-check-circle"></i>  One month free Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div id="standard" class="card">
+                        <h4>Standard</h4>
+                        <h1><span>1299 INR</span></h1>
+                        <h3>for 1st month then 499 INR month for monthly maintenance</h3>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Everything  from Basic Plan</li>
+
+                            <li><i class="far fa-check-circle"></i> Get a custom Domain for 1year</li>
+
+                            <li><i class="far fa-check-circle"></i> List upto 10 Products / Services on website</li>
+
+                            <li><i class="far fa-check-circle"></i>  One month free Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div id="advance" class="card">
+                        <h4>Advance</h4>
+                        <h1><span>1999 INR</span></h1>
+                        <h3>for 1st month then 699 INR month for monthly maintenance</h3>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Everything from Standard Plan</li>
+
+                            <li><i class="far fa-check-circle"></i> SEO management for website</li>
+
+                            <li><i class="far fa-check-circle"></i> List upto 25 Products / Services on website</li>
+
+                            <li><i class="far fa-check-circle"></i>  One month free Maintenance</li>
+
+                            <li><i class="far fa-check-circle"></i> Social Media Marketing<br>(Upto 10 posts/month)</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- quarterly plans -->
+
+                <div id="quarterly" class="tabcontent">
+                    
+                    <div id="basic" class="card">
+                        <h4>Basic</h4>
+                        <h1><span>2099 INR</span></h1>
+                        <h3>for first 3 month then 799 INR for 3m for monthly maintenance</h3>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Add your Business on Google Maps</li>
+
+                            <li><i class="far fa-check-circle"></i> Build a Static Google Business Website</li>
+
+                            <li><i class="far fa-check-circle"></i> Verify your Business on Google Maps</li>
+
+                            <li><i class="far fa-check-circle"></i>  3 months  Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div id="standard" class="card">
+                        <h4>Standard</h4>
+                        <h1><span>3499 INR</span></h1>
+                        <h3>for 3 month then 1299 INR for 3m for monthly maintenance</h3>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Everything  from Basic Plan</li>
+
+                            <li><i class="far fa-check-circle"></i> Get a custom Domain for 1year</li>
+
+                            <li><i class="far fa-check-circle"></i> List upto 10 Products / Services on website</li>
+
+                            <li><i class="far fa-check-circle"></i>  3 months Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div id="advance" class="card">
+                        <h4>Advance</h4>
+                        <h1><span>4999 INR</span></h1>
+                        <h3>for 3 month then 1999 INR for 3m for monthly maintenance</h3>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Everything from Standard Plan</li>
+
+                            <li><i class="far fa-check-circle"></i> SEO management for website</li>
+
+                            <li><i class="far fa-check-circle"></i> List upto 25 Products / Services on website</li>
+
+                            <li><i class="far fa-check-circle"></i>  3 month Maintenance</li>
+
+                            <li><i class="far fa-check-circle"></i> Social Media Marketing<br>(Upto 10 posts/month)</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div id="annually" class="tabcontent">
+                    
+                    <div id="basic" class="card">
+                        <h4>Basic</h4>
+                        <h1><span>7999 INR</span></h1>
+                        <h3>for first year then 799 INR for 3m for monthly maintenance</h3>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Add your Business on Google Maps</li>
+
+                            <li><i class="far fa-check-circle"></i> Build a Static Google Business Website</li>
+
+                            <li><i class="far fa-check-circle"></i> Verify your Business on Google Maps</li>
+
+                            <li><i class="far fa-check-circle"></i> 6 months  Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div id="standard" class="card">
+                        <h4>Standard</h4>
+                        <h1><span>12999 INR</span></h1>
+                        <h3>for 3 month then 1299 INR for 3m for monthly maintenance</h3>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Everything  from Basic Plan</li>
+
+                            <li><i class="far fa-check-circle"></i> Get a custom Domain for 1year</li>
+
+                            <li><i class="far fa-check-circle"></i> List upto 10 Products / Services on website</li>
+
+                            <li><i class="far fa-check-circle"></i>  6 months Maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div id="advance" class="card">
+                        <h4>Advance</h4>
+                        <h1><span>18999 INR</span></h1>
+                        <h3>for 3 month then 1999 INR for 3m for monthly maintenance</h3>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Everything from Standard Plan</li>
+
+                            <li><i class="far fa-check-circle"></i> SEO management for website</li>
+
+                            <li><i class="far fa-check-circle"></i> List upto 25 Products / Services on website</li>
+
+                            <li><i class="far fa-check-circle"></i> 6 month Maintenance</li>
+
+                            <li><i class="far fa-check-circle"></i> Social Media Marketing<br>(Upto 10 posts/month)</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            
+
+
+                <!-- <div id="basic" class="card">
                     <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_ua4bz2th.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px;"  loop  autoplay></lottie-player>
                     <h1>360° Google Maps Management</h1>
                     <h3>We'll cover it all! From adding your Business on <span>Google Maps</span> to making a website and listing products on it.</h3>
                 </div>
 
-                <div class="card">
+                <div id="standard" class="card">
                     <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_eiubpejs.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px;"  loop  autoplay></lottie-player>
                     <h1>Business Website Management</h1>
                     <h3>Having a website for your business is just like <span>"Cherry on the cake" </span>and we will pleasure to put that cherry for you!</h3>
                 </div>
 
-                <div class="card">
+                <div id="premium" class="card">
                     <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_lmqweibg.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px;"  loop  autoplay></lottie-player>
                     <h1>Social Media Managment</h1>
                     <h3>We all know that social media is a major part of life of <span>Indian Youths</span> today. So, why not promote on Social Media!</h3>
+                </div> -->
+            </div>
+
+            
+        </div>
+
+        <div id="about" class="section">
+            <h3>About</h3>
+            <div class="info">
+                <div class="about-us">
+                    <h2>Who we are</h2>
+                    <h4>We are a team of experienced developers who love creating content that makes your life easy.</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi incidunt modi deserunt, omnis consectetur saepe porro, ipsum quis corrupti unde, laboriosam aut quas dolores rem!</p>
+                    <a id="primary-btn" href="#contact">Learn more</a>
+                </div>
+                <div class="team">
+                    <div class="tcard">
+                        <div class="img"></div>
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis neque in porro sequi labore voluptatem dicta provident dignissimos expedita itaque.</p>
+                    </div>
+
+                    <div class="tcard">
+                        <div class="img"></div>
+                        <h3>Name</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis neque in porro sequi labore voluptatem dicta provident dignissimos expedita itaque.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,6 +303,31 @@
 
 <!-- script for lottie player -->
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- script for plans section -->
+<script>
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "flex";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 </html>
