@@ -29,9 +29,13 @@
 
 body
 {
-    width: 1280px;
     display: block;
     margin: auto;
+    box-sizing: border-box;
+    resize: horizontal;
+    overflow: auto;
+    max-width: 100%;
+    height: calc(100vh - 16px);
 }
 
 h1, h2, h3, h4, h5, h6
@@ -105,7 +109,7 @@ h1, h2, h3, h4, h5, h6
 {
     z-index: 1000;
     position: fixed;
-    width: 1280px;
+    width: 100%;
     overflow: auto;
     transition: all 0.15s linear;
     top: 0;
@@ -122,7 +126,7 @@ h1, h2, h3, h4, h5, h6
 
 .header .brand
 {
-    width: 150px;
+    width: 20%;
     align-items: center;
 }
 
@@ -145,8 +149,8 @@ h1, h2, h3, h4, h5, h6
 .header .menu
 {
     display: flex;
-    justify-content: space-around;
-    width: 640px;
+    justify-content: space-evenly;
+    width: 60%;
     align-items: center;
 }
 
@@ -177,7 +181,7 @@ section
 {
     height: 84vh;
     padding: 8vh 0;
-    width: 1256px;
+    width: 100%;
     padding: 0 12px;
     background-color: #f1f5f9;
 }
@@ -185,15 +189,20 @@ section
 section.main
 {
     height: 84vh;
-    padding: 8vh 12px;
+    padding: 8vh 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 section.main .content
 {
-    width: 45%;
+    width: 45vw;
+}
+
+section.main .content:nth-of-type(2)
+{
+    flex-basis: 45%;
 }
 
 section.main h1
