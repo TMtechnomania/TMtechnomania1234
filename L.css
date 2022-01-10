@@ -1,6 +1,6 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     background-color: #f1f5f9;
     scroll-behavior: smooth;
     font-family: "Nunito", sans-serif;
@@ -21,8 +21,8 @@ body
 h1, h2, h3, h4, h5, h6
 {
     font-family: "Nunito", sans-serif;
-    color: #1e3a8a;
     z-index: 5;
+    background-color: transparent;
 }
 
 .primary
@@ -41,47 +41,25 @@ h1, h2, h3, h4, h5, h6
 {
     background-color: #22d3ee;
     color: #f1f5f9;
-    padding: 1vw 2vw;
+    padding: 0.6vw 1.5vw;
     border-bottom: none;
-    border-radius: 0.5vh;
+    border-radius: 0.25vw;
     text-decoration: none;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
     -moz-transition: 0.4s ease-in-out;
     -ms-transition: 0.4s ease-in-out;
     -o-transition: 0.4s ease-in-out;
-    -webkit-border-radius: 0.5vh;
-    -moz-border-radius: 0.5vh;
-    -ms-border-radius: 0.5vh;
-    -o-border-radius: 0.5vh;
+    -webkit-border-radius: 0.25vw;
+    -moz-border-radius: 0.25vw;
+    -ms-border-radius: 0.25vw;
+    -o-border-radius: 0.25vw;
 }
 
 #primary-btn:hover
 {
     background-color: #334155;
     color: #f1f5f9;
-    padding: 1.5vh 2vw;
-    text-decoration: none;
-}
-
-#secondary-btn
-{
-    background-color: #334155;
-    color: #f1f5f9;
-    padding: 1.5vh 2vw;
-    text-decoration: none;
-    transition: 0.4s ease-in-out;
-    -webkit-transition: 0.4s ease-in-out;
-    -moz-transition: 0.4s ease-in-out;
-    -ms-transition: 0.4s ease-in-out;
-    -o-transition: 0.4s ease-in-out;
-}
-
-#secondary-btn:hover
-{
-    background-color: #22d3ee;
-    color: #f1f5f9;
-    padding: 1.5vh 2vw;
     text-decoration: none;
 }
 
@@ -101,13 +79,15 @@ h1, h2, h3, h4, h5, h6
     justify-content: space-between;
     overflow: hidden;
     font-family: "Nunito", sans-serif;
-    background-color: #f1f5f9;
+    background-color: rgb(241, 245, 249, 80%);
+    backdrop-filter: blur(0.5vw);
 }
 
 .header .brand
 {
     width: fit-content;
     align-items: center;
+    background-color: transparent;
 }
 
 .header .brand a
@@ -116,29 +96,34 @@ h1, h2, h3, h4, h5, h6
     align-items: center;
     text-decoration: none;
     color: #1e3a8a;
-    font-size: 1.5vh;
-    line-height: 1.5vh;
+    font-size: 01vw;
+    line-height: 1vw;
+    background-color: transparent;
 }
 
 .header .brand a img
 {
     height: 2vw;
-    padding: 2vh 1vh 2vh 2vh;
+    padding: 0 0.5vw 0 1vw;
+    background-color: transparent;
 }
 
 .header .menu
 {
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-around;
+    width: 45vw;
     align-items: center;
+    background-color: transparent;
 }
 
 .header .menu a
 {
     text-decoration: none;
     font-weight: 900;
+    font-size: 1vw;
     color: #1e3a8a;
+    background-color: transparent;
     border-bottom: transparent 2px solid;
     transition: 0.4s ease-in-out;
     -webkit-transition: 0.4s ease-in-out;
@@ -157,22 +142,15 @@ h1, h2, h3, h4, h5, h6
     border-bottom: #22d3ee 2px solid;
 }
 
-section
-{
-    height: 44vw;
-    padding: 6.25vw 2vw;
-    width: 96vw;
-    aspect-ratio: 16/9;
-    background-color: #f1f5f9;
-}
-
 section.main
 {
-    height: 42vw;
-    padding: 6.25vw 2vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    aspect-ratio: 24/11;
+    padding: 4.2vw 0;
+    width: 100vw;
+    background-color: #f1f5f9;
 }
 
 section.main .content
@@ -182,23 +160,24 @@ section.main .content
 
 section.main h1
 {
-    font-size: 5vh;
-    line-height: 5vh;
+    font-size: 2.6vw;
+    line-height: 3.2vw;
     color: #334155;
-    padding-bottom: 2vh;
+    padding-bottom: 1.2vw;
 }
 
 section.main span
 {
     color: #22d3ee;
+    background-color: transparent;
 }
 
 section.main h3
 {
-    font-size: 3vh;
-    line-height: 3vh;
+    font-size: 1.4vw;
+    line-height: 2vw;
     color: #334155;
-    padding-bottom: 6vh;
+    padding-bottom: 2vw;
     font-weight: 500;
 }
 
@@ -206,35 +185,39 @@ section.main .content a
 {
     font-family: "Nunito", sans-serif;
     font-weight: 900;
+    font-size: 1vw;
 }
 
 .wrapper
 {
     display: block;
-    width: 96vw;
-    padding: 0 2vw;
+    width: 100vw;
+    position: relative;
+}
+
+#btt
+{
+    display: none;
 }
 
 .btt
 {
     position: fixed;
     background-color: #22d3ee;
-    height: 5vh;
-    width: 5vh;
-    right: 4vh;
-    bottom: 4vh;
+    height: 3vw;
+    width: 3vw;
+    right: 1vw;
+    bottom: 1vw;
     color: #cffafe;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 2.8vh;
-    font-size: 3vh;
     font-weight: 800;
-    border-radius: 0.5vh;
-    -webkit-border-radius: 0.5vh;
-    -moz-border-radius: 0.5vh;
-    -ms-border-radius: 0.5vh;
-    -o-border-radius: 0.5vh;
+    border-radius: 0.4vw;
+    -webkit-border-radius: 0.4vw;
+    -moz-border-radius: 0.4vw;
+    -ms-border-radius: 0.4vw;
+    -o-border-radius: 0.4vw;
 }
 
 .btt a
@@ -242,29 +225,62 @@ section.main .content a
     background-color: transparent;
     text-decoration: none;
     display: flex;
+    height: 100%;
     align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    align-items: center;
+    text-decoration: none;
+    color: #cffafe;
+
 }
 
 .btt i
 {
-    color: #cffafe;
     background-color: transparent;
-    display: block;
-    margin: auto;
-    text-decoration: none;
-    line-height: 2.8vh;
 }
 
 .section
 {
-    height: 84vh;
-    padding: 8vh 0;
+    aspect-ratio: 24/11;
+    padding: 4.2vw 0;
+    width: 100vw;
     background-color: #f1f5f9;
+}
+
+.section h3
+{
+    font-size: 1vw;
+    padding-top: 1vw;
+    color: #334155;
+    font-weight: 800;
+}
+
+.section h1
+{
+    font-size: 2vw;
+    font-weight: 800;
+    color: #1e3a8a;
+}
+
+#services h1
+{
+    color: #f1f5f9;
+    font-weight: 800;
+}
+
+#services h3
+{
+    color: #f1f5f9;
+    font-weight: 800;
 }
 
 #services
 {
     text-align: center;
+    background-color: #1b1b41;
 }
 
 #services .service
@@ -272,13 +288,16 @@ section.main .content a
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 4.8vh;
+    width: 80vw;
+    margin: auto;
+    background-color: transparent;
 }
 
 #services .card
 {
-    width: 380px;
-    height: 60vh;
+    aspect-ratio: 6.5/10;
+    height: 32vw;
+    background-color: #20204b;
     box-shadow: 0px 0 10px rgb(1 41 112 / 8%);
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -290,9 +309,11 @@ section.main .content a
 
 #services .card lottie-player
 {
-    align-items: center;
     display: block;
+    aspect-ratio: 1/1;
     margin: auto;
+    width: 72%;
+    height: 18vw;
     transition: ease-in-out 0.5s;
     -webkit-transition: ease-in-out 0.5s;
     -moz-transition: ease-in-out 0.5s;
@@ -302,19 +323,21 @@ section.main .content a
 
 #services .card h1
 {
-    padding: 0 10px;
+    padding: 0 1vw;
+    color: #4949b4;
 }
 
 #services .card h3
 {
     font-weight: 500;
-    padding: 10px;
-    color: #334155;
+    padding: 1vw;
+    color: #6f6fa2;
 }
 
 #services .card span
 {
     color: #22d3ee;
+    background-color: transparent;
 }
 
 #services .card:hover
@@ -336,7 +359,7 @@ section.main .content a
 /* get in touch section */
 #git
 {
-    height: 40vh;
+    height: 25vw;
     width: 100%;
     background-color: #cffafe;
     text-align: center;
@@ -349,6 +372,7 @@ section.main .content a
 #git h2
 {
     color: #1e3a8a;
+    font-size: 1.2vw;
     background-color: transparent;
 }
 
@@ -356,8 +380,9 @@ section.main .content a
 {
     color: #334155;
     font-weight: 500;
+    font-size: 1.6vw;
     background-color: transparent;
-    padding-bottom: 2vh;
+    padding-bottom: 1vw;
 }
 
 #git a
@@ -365,54 +390,52 @@ section.main .content a
     text-decoration: none;
     font-weight: 800;
     font-family: "Nunito", sans-serif;
+    font-size: 1vw;
 }
-
-
 
 #plans
 {
     text-align: center;
     display: block;
-    padding-bottom: 16vh;
 }
 
 #plans .tab
 {
     overflow: hidden;
     background-color: #cffafe;
-    height: 4vh;
-    width: 36%;
-    border-radius: 2vh;
+    width: 36vw;
+    border-radius: 2vw;
     color: #334155;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: auto;
     align-items: center;
-    -webkit-border-radius: 2vh;
-    -moz-border-radius: 2vh;
-    -ms-border-radius: 2vh;
-    -o-border-radius: 2vh;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
     overflow: hidden;
-    margin-top: 2vh;
+    margin-top: 1vw;
 }
 
 #plans .tab button
 {
     background-color: transparent;
     border: none;
-    font-size: 2vh;
+    font-size: 1vw;
     outline: none;
     cursor: pointer;
     align-items: center;
     text-align: center;
-    padding: 0.5vh 8%;
+    width: 12vw;
+    height: 2.5vw;
     border-radius: 2vh;
     -webkit-border-radius: 2vh;
     -moz-border-radius: 2vh;
     -ms-border-radius: 2vh;
     -o-border-radius: 2vh;
     text-decoration: none;
-    color: #334155;
+    color: #1e3a8a;
     transition: ease-in-out 0.4s;
     -webkit-transition: ease-in-out 0.4s;
     -moz-transition: ease-in-out 0.4s;
@@ -425,20 +448,18 @@ section.main .content a
 {
     background-color: #22d3ee;
     color: #f1f5f9;
-    font-weight: 800;
 }
 
 #plans .tab button:hover
 {
     background-color: #334155;
-    font-weight: 800;
     color: #f1f5f9;
 }
 
 #plans .tabcontent {
     display: none;
     justify-content: space-around;
-    width: 1280px;
+    width: 80vw;
 }
 
 
@@ -454,21 +475,21 @@ section.main .content a
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 4.8vh;
+    padding-top: 1vw;
 }
 
 #plans .card
 {
-    margin-top: 4vh;
-    width: 380px;
-    height: 60vh;
+    margin-top: 1.2vw;
+    height: 32vw;
+    aspect-ratio: 6.5/10;
     transition: ease-in-out 0.4s;
     box-shadow: 0px 0 10px rgb(1 41 112 / 8%);
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    border-radius: 0.5vw;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    -ms-border-radius: 0.5vw;
+    -o-border-radius: 0.5vw;
     overflow: hidden;
     -webkit-transition: ease-in-out 0.4s;
     -moz-transition: ease-in-out 0.4s;
@@ -478,8 +499,8 @@ section.main .content a
 
 #plans .card h4
 {
-    padding: 20px 10px;
-    font-size: 3vh;
+    font-size: 1.5vw;
+    padding: 1vw;
 }
 
 #basic h4
@@ -504,30 +525,38 @@ section.main .content a
 {
     font-weight: 500;
     color: #334155;
-    padding-top: 6vh;
+    padding: 4vw 0;
+    font-size: 3vw;
+    line-height: 3.2vw;
+    vertical-align: middle;
 }
 
 #plans .card h3
 {
-    padding-bottom: 6vh;
+    padding: 0 1vw;
 }
 
 #plans .card span
 {
     color: #22d3ee;
-    font-size: 6vh;
     font-weight: 800;
 }
 
 #plans .card:hover
 {
-    box-shadow: 0px 0 10px rgb(1 41 112 / 16%);
+    box-shadow: 0px 0 1vw rgb(1 41 112 / 16%);
     transform: scale(1.05);
+}
+
+#plans .card ul
+{
+    padding: 1vw 0;
+    font-size: 0.8vw;
 }
 
 #plans .card li
 {
-    padding: 1vh;
+    padding: 0.4vw 1vw;
 }
 
 #plans .card:hover lottie-player
@@ -544,16 +573,18 @@ section.main .content a
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 100%;
+    height: 94%;
+    width: 80vw;
+    padding: 0 10vw;
 }
 
 .about-us
 {
     text-align: left;
     background-color: #cffafe;
-    height: 34vh;
-    padding: 2vh;
-    width: 640px;
+    height: 18vw;
+    padding: 2vw;
+    width: 38vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -562,30 +593,33 @@ section.main .content a
 #about h3
 {
     text-align: center;
+    font-size: 1vw;
 }
 
 .about-us h2
 {
     background-color: transparent;
-    font-size: 2vh;
+    font-size: 1.2vw;
 }
 
 .about-us h4
 {
     background-color: transparent;
     color: #334155;
-    font-size: 3vh;
+    font-size: 1.8vw;
 }
 
 .about-us p
 {
     background-color: transparent;
+    font-size: 1vw;
 }
 
 .about-us a
 {
     width: fit-content;
-    margin-top: 2vh;
+    margin-top: 1vw;
+    font-size: 1vw;
     font-weight: 800;
 }
 
@@ -593,21 +627,20 @@ section.main .content a
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 640px;
-    height: auto;
+    justify-content: space-around;
+    width: 40vw;
 }
 
 .tcard
 {
-    height: 60vh;
-    width: 300px;
-    box-shadow: 0px 0 10px rgb(1 41 112 / 8%);
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    width: 18vw;
+    aspect-ratio: 30/52;
+    box-shadow: 0 0 10px rgb(1 41 112 / 8%);
+    border-radius: 0.5vw;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    -ms-border-radius: 0.5vw;
+    -o-border-radius: 0.5vw;
     overflow: hidden;
     transition: ease 0.4s;
 }
@@ -620,7 +653,7 @@ section.main .content a
 
 .tcard .img1
 {
-    height: 60%;
+    aspect-ratio: 1/1;
     background-image:
     url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
     background-size: cover;
@@ -629,7 +662,7 @@ section.main .content a
 
 .tcard .img2
 {
-    height: 60%;
+    aspect-ratio: 1/1;
     background-image:
     url(https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=766&q=80);
     background-size: cover;
@@ -638,53 +671,63 @@ section.main .content a
 
 .tcard h3
 {
-    padding: 1vh;
-    font-size: 2vh;
+    padding: 0.5vw;
+    font-size: 1.2vw;
 }
 
 .tcard h5
 {
     text-align: center;
+    font-size: 0.8vw;
     font-weight: 500;
     color: #334155;
 }
 
 .tcard p
 {
-    padding: 1vh;
+    padding: 0.6vw;
     text-align: center;
+    font-size: 1vw;
 }
 
 .tcard .social
 {
     position: absolute;
-    right: -4vh;
-    top: 2vh;
+    right: -1.8vw;
+    top: 1vw;
     padding: 0vh;
     display: flex;
     flex-direction: column;
     color: #cffafe;
-    font-size: 2vh;
+    font-size: 1vw;
     background-color: #cbd5e1;
-    border-radius: 1vh;
+    border-radius: 0.4vw;
     overflow: hidden;
     transition: all ease-in-out 0.4s;
     transition-delay: 0.4s;
+    -webkit-border-radius: 0.4vw;
+    -moz-border-radius: 0.4vw;
+    -ms-border-radius: 0.4vw;
+    -o-border-radius: 0.4vw;
 }
 
 .tcard:hover .social
 {
-    right: 2vh;
+    right: 1vw;
 }
 
 .tcard .social a
 {
     color: #334155;
     text-decoration: none;
-    padding: 1vh;
-    height: 2vh;
-    border-radius: 1vh;
+    padding: 0.5vw;
+    height: 1vw;
+    border-radius: 0.5vw;
     background-color: #cbd5e1;
+    -webkit-border-radius: 0.5vw;
+    -moz-border-radius: 0.5vw;
+    -ms-border-radius: 0.5vw;
+    -o-border-radius: 0.5vw;
 }
 
 .tcard .social a:hover
@@ -701,34 +744,22 @@ section.main .content a
 #contact
 {
     text-align: center;
+    width: 100vw;
     align-items: center;
     background-color: transparent;
 }
 
-#contact h1
-{
-    font-weight: 500;
-    color: #334155;
-    padding-top: 6vh;
-}
-
 #contact h3
 {
-    padding-bottom: 6vh;
-}
-
-#contact span
-{
-    color: #22d3ee;
-    font-size: 6vh;
-    font-weight: 800;
+    padding: 1vw;
+    font-size: 1.4vw;
 }
 
 .section-half
 {
-    height: 24vh;
-    padding: 8vh 0;
-    margin-bottom: 6vh;
+    padding: 2vw 0;
+    width: 100vw;
+    aspect-ratio: 6/1;
     background-color: #f1f5f9;
 }
 
@@ -741,35 +772,37 @@ section.main .content a
     text-align: center;
     height: 100%;
     width: 100%;
-    font-size: 4vh;
+    font-size: 2vw;
 }
 
 .section-half .contact i
 {
     background-color: #cffafe;
     color: #1e3a8a;
-    padding: 1.5vh;
-    line-height: 3vh;
+    padding: 0.5vw;
 }
 
 .section-half .contact .mail, .site
 {
-    width: 45%;
+    width: 40vw;
     background-color: #cffafe;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    vertical-align: middle;
 }
 
 .section-half .contact h6
 {
     background-color: #cffafe;
+    color: #1e3a8a;
 }
 
 .footer
 {
-    height: 8vh;
+    padding: 1vw;
+    font-size: 0.8vw;
     background-color: #f1f5f9;
     align-items: center;
     text-align: center;
@@ -780,4 +813,11 @@ section.main .content a
     text-decoration: none;
     text-align: center;
     align-items: center;
+    background-color: transparent;
+}
+
+#contact a i
+{
+    text-decoration: none;
+    border: 0;
 }
