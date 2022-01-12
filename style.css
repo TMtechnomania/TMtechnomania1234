@@ -109,6 +109,30 @@ li{
     padding-left: 1vw;
 }
 
+#btn-wa{
+    padding: 0.8vw 1vw;
+    margin: 0.5vw 0;
+    color: #fff;
+    font-weight: 700;
+    background-color: #25D366;
+    align-items: center;
+    display: flex;
+    width: max-content;
+    border-radius: 0.3vw;
+    -webkit-border-radius: 0.3vw;
+    -moz-border-radius: 0.3vw;
+    -ms-border-radius: 0.3vw;
+    -o-border-radius: 0.3vw;
+}
+
+#btn-wa:hover{
+    background-color: #1e293b;
+}
+
+#btn-wa i{
+    padding-left: 0.5vw;
+}
+
 /* default body properties ends here */
 
 
@@ -122,6 +146,7 @@ li{
 
 .title, .tagline{
     text-align: center;
+    padding: 1vw;
 }
 
 .bg1{
@@ -328,3 +353,44 @@ li{
     font-weight: 600;
 }
 
+/* plans start here */
+
+#plans{
+    background-color: #fff;
+    border-radius: 1vw;
+    width: 70vw;
+    padding: 4vw 2.5vw;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#plans .wrapper-e{
+    display: flex;
+    width: 70vw;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#plans .offer, .essential, .advance, .turbo{
+    width: 15vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#plans img{
+    width: 4vw;
+    padding: 2vw;
+}
+
+#plans h4{
+    font-weight: 700;
+}
