@@ -394,3 +394,10 @@ li{
 #plans h4{
     font-weight: 700;
 }
+
+.ads{
+    display: block;
+    margin: auto;
+    width: 728px;
+    padding: 2vw;
+}
